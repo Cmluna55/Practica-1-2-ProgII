@@ -1,5 +1,5 @@
 //3.Crea una clase Coche con marca,modelo y velocidad
-package Ejercicio2;
+package Ejercicio3;
 
 public class Coche {
     private String marca;

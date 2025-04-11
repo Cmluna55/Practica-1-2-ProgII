@@ -1,5 +1,5 @@
 package Ejercicio1;
-//
+//Crea una clase Persona con nombre,edad y ciudad.
 public class Persona {
     public  String nombre;
     public  int edad;
