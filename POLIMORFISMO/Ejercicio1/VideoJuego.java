@@ -1,10 +1,11 @@
 package POLIMORFISMO.Ejercicio1;
+//1.Sea la clase VideoJuego
 
 public class VideoJuego {
     private String nombre;
     private String plataforma;
     private int cantidadJugadores;
-
+//sobrecargar 2 veces el constructor
     public VideoJuego(String nombre,String plataforma){
         this.nombre=nombre;
         this.plataforma=plataforma;
@@ -15,9 +16,11 @@ public class VideoJuego {
         this.plataforma=plataforma;
         this.cantidadJugadores=cantitadJugadores;   
     }
+//Implementar metodo mostrar()
     public void mostrar(){
         System.out.println("Nombre: " + nombre + "\nPlataforma: " + plataforma + "\nJugadores: " + cantidadJugadores);
     }
+//Sobrecargar metodo AgregarJugadores
     public void AgregarJugadores(){
         this.cantidadJugadores=cantidadJugadores+1;
     }
@@ -25,6 +28,7 @@ public class VideoJuego {
         this.cantidadJugadores=cantidadJugadores+Jugadores;
     }
     public static void main(String[] args) {
+        //Instanciar al menos 2 videojuegos
         VideoJuego vj1=new VideoJuego("Mortal Kombat", "Play Station");
         vj1.mostrar();
         vj1.AgregarJugadores();
